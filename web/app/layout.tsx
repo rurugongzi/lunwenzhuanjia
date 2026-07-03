@@ -3,8 +3,8 @@ import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Providers } from "@/components/Providers";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
-const siteName = process.env.NEXT_PUBLIC_SITE_NAME || "引用通 / CiteTong";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://lunwenzhuanjia.cn";
+const siteName = process.env.NEXT_PUBLIC_SITE_NAME || "论文专家 / CiteTong";
 const description =
   "CSSCI 期刊引文格式自动校验 · 271 种期刊覆盖 · 1 分钟拿到改稿建议";
 
