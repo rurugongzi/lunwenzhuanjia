@@ -1,0 +1,222 @@
+{
+  "meta": {
+    "paper": "tests/fixtures/sample-wenyi.txt",
+    "journal": "文艺争鸣",
+    "citations_found": 17
+  },
+  "parser": {
+    "total": 17,
+    "by_type": {
+      "期刊论文": 6,
+      "著作": 4,
+      "报纸": 1,
+      "译著": 6
+    },
+    "by_system": {
+      "尾注": 17
+    },
+    "avg_confidence": 0.929,
+    "low_confidence_count": 0
+  },
+  "validator": {
+    "total": 17,
+    "ok": 14,
+    "warn": 0,
+    "fail": 3,
+    "fail_rate": 0.176,
+    "top_fail_rules": {
+      "needs_doc_type": 3
+    }
+  },
+  "results": [
+    {
+      "citation_index": 0,
+      "raw": "袁济喜：《疏野与诗话》，《北京大学学报》［J］2023年第6期。",
+      "parsed_type": "期刊论文",
+      "status": "ok",
+      "errors": [],
+      "warnings": [],
+      "suggestions": []
+    },
+    {
+      "citation_index": 1,
+      "raw": "汪涌豪：《范畴论》［M］，复旦大学出版社，1999年。",
+      "parsed_type": "著作",
+      "status": "ok",
+      "errors": [],
+      "warnings": [],
+      "suggestions": []
+    },
+    {
+      "citation_index": 2,
+      "raw": "肖鹰：《庄子美学辨正——对流行误解的批驳》，《文学评论》［J］2023年第5期。",
+      "parsed_type": "期刊论文",
+      "status": "ok",
+      "errors": [],
+      "warnings": [],
+      "suggestions": []
+    },
+    {
+      "citation_index": 3,
+      "raw": "吴中胜：《陶渊明的内修与自得》，《光明日报》［N］2023年3月14日。",
+      "parsed_type": "报纸",
+      "status": "ok",
+      "errors": [],
+      "warnings": [],
+      "suggestions": []
+    },
+    {
+      "citation_index": 4,
+      "raw": "尼采：《悲剧的诞生》［M］，周国平译，三联书店，1986年。",
+      "parsed_type": "译著",
+      "status": "ok",
+      "errors": [],
+      "warnings": [],
+      "suggestions": []
+    },
+    {
+      "citation_index": 5,
+      "raw": "海德格尔：《林中路》［M］，孙周兴译，上海译文出版社，2004年。",
+      "parsed_type": "译著",
+      "status": "ok",
+      "errors": [],
+      "warnings": [],
+      "suggestions": []
+    },
+    {
+      "citation_index": 6,
+      "raw": "利奥波德：《沙乡年鉴》［M］，侯文蕙译，吉林人民出版社，1997年。",
+      "parsed_type": "译著",
+      "status": "ok",
+      "errors": [],
+      "warnings": [],
+      "suggestions": []
+    },
+    {
+      "citation_index": 7,
+      "raw": "罗尔斯顿：《哲学走向荒野》［M］，刘耳、叶平译，吉林人民出版社，2000年。",
+      "parsed_type": "译著",
+      "status": "ok",
+      "errors": [],
+      "warnings": [],
+      "suggestions": []
+    },
+    {
+      "citation_index": 8,
+      "raw": "李泽厚：《美的历程》［M］，三联书店，2009年。",
+      "parsed_type": "著作",
+      "status": "ok",
+      "errors": [],
+      "warnings": [],
+      "suggestions": []
+    },
+    {
+      "citation_index": 9,
+      "raw": "王国维：《人间词话》［M］，上海古籍出版社，1998年。",
+      "parsed_type": "著作",
+      "status": "ok",
+      "errors": [],
+      "warnings": [],
+      "suggestions": []
+    },
+    {
+      "citation_index": 10,
+      "raw": "查洪德：《元代文学通论》［M］，东方出版中心，2019年。",
+      "parsed_type": "著作",
+      "status": "ok",
+      "errors": [],
+      "warnings": [],
+      "suggestions": []
+    },
+    {
+      "citation_index": 11,
+      "raw": "马昕：《袁宏道性灵文学中的\"边缘人心态\"及其理论弊端》，《文学评论》［J］2024年第3期。",
+      "parsed_type": "期刊论文",
+      "status": "ok",
+      "errors": [],
+      "warnings": [],
+      "suggestions": []
+    },
+    {
+      "citation_index": 12,
+      "raw": "马尔库塞：《单向度的人——发达工业社会意识形态研究》［M］，刘继译，上海译文出版社，2006年。",
+      "parsed_type": "译著",
+      "status": "ok",
+      "errors": [],
+      "warnings": [],
+      "suggestions": []
+    },
+    {
+      "citation_index": 13,
+      "raw": "利奥波德：《沙乡年鉴》［M］，侯文蕙译，吉林人民出版社，1997年。",
+      "parsed_type": "译著",
+      "status": "ok",
+      "errors": [],
+      "warnings": [],
+      "suggestions": []
+    },
+    {
+      "citation_index": 14,
+      "raw": "张振谦：论\"野\"作为诗学范畴，学术界，2015年第4期。",
+      "parsed_type": "期刊论文",
+      "status": "fail",
+      "errors": [
+        {
+          "rule": "needs_doc_type",
+          "message": "《文艺争鸣》要求文献类型标识，但未找到",
+          "severity": "fail"
+        }
+      ],
+      "warnings": [],
+      "suggestions": [
+        {
+          "field": "doc_type_tag",
+          "current": "(缺失)",
+          "suggested": "在出版者后加 [J]"
+        }
+      ]
+    },
+    {
+      "citation_index": 15,
+      "raw": "仲瑶：武功体与司空图疏野品——从创作实践到理论命名的概念链，文学遗产，2020年第2期。",
+      "parsed_type": "期刊论文",
+      "status": "fail",
+      "errors": [
+        {
+          "rule": "needs_doc_type",
+          "message": "《文艺争鸣》要求文献类型标识，但未找到",
+          "severity": "fail"
+        }
+      ],
+      "warnings": [],
+      "suggestions": [
+        {
+          "field": "doc_type_tag",
+          "current": "(缺失)",
+          "suggested": "在出版者后加 [J]"
+        }
+      ]
+    },
+    {
+      "citation_index": 16,
+      "raw": "许自强：谈疏野，古典文学知识，1994年第5期。",
+      "parsed_type": "期刊论文",
+      "status": "fail",
+      "errors": [
+        {
+          "rule": "needs_doc_type",
+          "message": "《文艺争鸣》要求文献类型标识，但未找到",
+          "severity": "fail"
+        }
+      ],
+      "warnings": [],
+      "suggestions": [
+        {
+          "field": "doc_type_tag",
+          "current": "(缺失)",
+          "suggested": "在出版者后加 [J]"
+        }
+      ]
+    }
+  ]
+}

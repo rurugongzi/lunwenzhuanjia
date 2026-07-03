@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lunwenzhuanjia.cn/schema/journal.schema.json",
+  "title": "Journal",
+  "description": "CSSCI 收录期刊元数据（中文社会科学引文索引）",
+  "type": "object",
+  "required": [
+    "id", "name", "subject", "subject_id", "source",
+    "cssci_year", "rank_in_subject", "has_format_spec"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z\\-]+",
+      "description": "唯一 ID，subject_id + 期刊 slug（小写英文+连字符）"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 2,
+      "description": "期刊标准名（去括号副标题）"
+    },
+    "alias": {
+      "type": ["string", "null"],
+      "description": "括号副标题（如「南京艺术学院学报（美术与设计）」中的'美术与设计'）"
+    },
+    "subject": {
+      "type": "string",
+      "enum": ["哲学", "历史学", "中国文学", "外国文学", "艺术学", "社会学", "政治学", "法学"],
+      "description": "8 大学科之一"
+    },
+    "subject_id": {
+      "type": "string",
+      "enum": [
+        "philosophy", "history", "chinese-literature", "foreign-literature",
+        "arts", "sociology", "political-science", "law"
+      ]
+    },
+    "source": {
+      "type": "string",
+      "enum": ["main", "ext"],
+      "description": "CSSCI 来源：主目录（main）或扩展版（ext）"
+    },
+    "cssci_year": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{4}$",
+      "description": "CSSCI 收录年度，如 '2025-2026'"
+    },
+    "rank_in_subject": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "学科内排序（按南京大学目录原始顺序）"
+    },
+    "has_format_spec": {
+      "type": "boolean",
+      "description": "是否已有完整注释/引文格式规范（academic-citation skill 收录）"
+    },
+    "format_spec_id": {
+      "type": ["string", "null"],
+      "description": "对应格式规范的 ID（如 'philosophy-research'）；has_format_spec=false 时为 null"
+    }
+  }
+}

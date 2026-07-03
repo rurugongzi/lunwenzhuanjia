@@ -1,0 +1,51 @@
+{
+  "total_journals": 271,
+  "main_count": 193,
+  "ext_count": 78,
+  "with_format_spec": 23,
+  "without_format_spec": 248,
+  "by_subject": {
+    "哲学": {
+      "main": 15,
+      "ext": 4,
+      "total": 19
+    },
+    "历史学": {
+      "main": 32,
+      "ext": 10,
+      "total": 42
+    },
+    "中国文学": {
+      "main": 24,
+      "ext": 8,
+      "total": 32
+    },
+    "外国文学": {
+      "main": 6,
+      "ext": 1,
+      "total": 7
+    },
+    "艺术学": {
+      "main": 29,
+      "ext": 14,
+      "total": 43
+    },
+    "社会学": {
+      "main": 14,
+      "ext": 8,
+      "total": 22
+    },
+    "政治学": {
+      "main": 43,
+      "ext": 15,
+      "total": 58
+    },
+    "法学": {
+      "main": 30,
+      "ext": 18,
+      "total": 48
+    }
+  },
+  "by_source_year": "CSSCI 2025-2026",
+  "source_file": "/Users/rurugongzi/Downloads/cssci_8学科_271种.md"
+}

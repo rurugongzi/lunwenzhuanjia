@@ -1,0 +1,66 @@
+[
+  {
+    "id": "philosophy",
+    "name": "哲学",
+    "name_en": "Philosophy",
+    "count_main": 15,
+    "count_ext": 4,
+    "count_total": 19
+  },
+  {
+    "id": "history",
+    "name": "历史学",
+    "name_en": "History",
+    "count_main": 32,
+    "count_ext": 10,
+    "count_total": 42
+  },
+  {
+    "id": "chinese-literature",
+    "name": "中国文学",
+    "name_en": "Chinese Literature",
+    "count_main": 24,
+    "count_ext": 8,
+    "count_total": 32
+  },
+  {
+    "id": "foreign-literature",
+    "name": "外国文学",
+    "name_en": "Foreign Literature",
+    "count_main": 6,
+    "count_ext": 1,
+    "count_total": 7
+  },
+  {
+    "id": "arts",
+    "name": "艺术学",
+    "name_en": "Arts",
+    "count_main": 29,
+    "count_ext": 14,
+    "count_total": 43
+  },
+  {
+    "id": "sociology",
+    "name": "社会学",
+    "name_en": "Sociology",
+    "count_main": 14,
+    "count_ext": 8,
+    "count_total": 22
+  },
+  {
+    "id": "political-science",
+    "name": "政治学",
+    "name_en": "Political Science",
+    "count_main": 43,
+    "count_ext": 15,
+    "count_total": 58
+  },
+  {
+    "id": "law",
+    "name": "法学",
+    "name_en": "Law",
+    "count_main": 30,
+    "count_ext": 18,
+    "count_total": 48
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FormatSpec",
+  "description": "期刊注释/引文格式规范",
+  "type": "object",
+  "required": ["id", "journal_name", "system", "numbering", "english_format"],
+  "properties": {
+    "id":                 { "type": "string", "description": "规范 ID，对应 journal.format_spec_id" },
+    "journal_name":       { "type": "string", "description": "期刊标准名" },
+    "system":             {
+      "type": "string",
+      "enum": ["页下注①②", "尾注1,2", "作者—年制（夹注）"],
+      "description": "注释体系"
+    },
+    "needs_pub_city":     { "type": "boolean", "description": "是否需要出版城市" },
+    "needs_doc_type":     { "type": "boolean", "description": "是否需要 [M][J] 文献类型标识" },
+    "has_bibliography":   { "type": "boolean", "description": "是否有文末文献" },
+    "numbering": {
+      "type": "string",
+      "enum": ["page", "continuous", "section", "none"],
+      "description": "编号方式：page=每页重排, continuous=通篇连续, section=分节, none=不编号"
+    },
+    "numbering_position": {
+      "type": "string",
+      "enum": ["标点前", "标点后", "—"],
+      "description": "序号相对标点的位置"
+    },
+    "english_format": {
+      "type": "string",
+      "enum": ["CASS", "Chicago", "APA"],
+      "description": "英文文献格式"
+    },
+    "special_rules": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "特殊规则列表（如禁用'同上注'、古籍格式细节等）"
+    }
+  }
+}

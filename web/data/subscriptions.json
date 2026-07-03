@@ -1,0 +1,22 @@
+[
+  {
+    "id": "4187ef96-41cd-458c-86d4-8f055620f56f",
+    "user_id": "63663eba-95bc-4a53-8b68-55f69c7599ca",
+    "plan": "trial",
+    "status": "expired",
+    "started_at": "2026-06-16T11:01:09.507Z",
+    "expires_at": "2026-06-23T11:01:09.507Z",
+    "quota_total": 5,
+    "quota_used": 0
+  },
+  {
+    "id": "5b1fc8c2-1b50-4d79-a93a-2c7c5176fa4a",
+    "user_id": "63663eba-95bc-4a53-8b68-55f69c7599ca",
+    "plan": "student",
+    "status": "active",
+    "started_at": "2026-06-16T11:09:18.435Z",
+    "expires_at": "2026-07-16T11:09:18.435Z",
+    "quota_total": 30,
+    "quota_used": 0
+  }
+]
