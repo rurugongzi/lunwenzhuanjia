@@ -9,6 +9,7 @@
 
 import NextAuth, { type NextAuthConfig } from "next-auth";
 import Credentials from "next-auth/providers/credentials";
+import { JWT } from "next-auth/jwt";
 import bcrypt from "bcryptjs";
 import { findUserByEmail, findUserById } from "./storage";
 
@@ -19,14 +20,19 @@ declare module "next-auth" {
     name: string;
     role: string;
   }
-}
-
-declare module "next-auth/jwt" {
-  interface JWT {
-    id: string;
-    role: string;
+  interface Session {
+    user: {
+      id: string;
+      email: string;
+      name: string;
+      role: string;
+    };
   }
 }
+
+// JWT interface 已在 next-auth v5 中默认包含 id/email/name 等字段，
+// 通过 callbacks.jwt 写入到 token.id / token.role，Session.user 自动继承。
+// 无需再 declare module "next-auth/jwt"。
 
 export const authConfig: NextAuthConfig = {
   trustHost: true,
